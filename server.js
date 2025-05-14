@@ -11,8 +11,8 @@ const PORT = process.env.PORT || 5000;
 // Allow requests from your frontend domain
 app.use(cors());
 
-// Replace with your NewsAPI key
-const NEWS_API_KEY = "81f5e798d3434c3c9544f4ef37cbcbad";
+const NEWS_API_KEY = process.env.NEWS_API_KEY;
+// this is when hosted where api key is stored in env file in Render's system setting
 
 // Proxy endpoint
 app.get("/news", async (req, res) => {
