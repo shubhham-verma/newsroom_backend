@@ -14,7 +14,7 @@ const PORT = process.env.PORT || 5000;
 app.use(cors());
 
 
-// const NEWS_API_KEY = "81f5e798d3434c3c9544f4ef37cbcbad";
+
 // this is when running locally where api key is hardcoded
 const api_key = process.env.NEWS_API_KEY;
 // this is when hosted where api key is stored in env file in Render's system setting
